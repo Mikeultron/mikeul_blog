@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+}
+
+.primary {
+  background-color: #1b3bee;
+}
+
+.success {
+  background-color: #31c231;
+}
+
+.danger {
+  background-color: red;
+}
+
+header {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.blogs-wrapper {
+  padding: 100px 50px;
+  width: 90%;
+  margin: auto;
+}
+
+.blogs-wrapper .buttons {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-group {
+  margin: auto;
+  width: 70%;
+}
+
+.form-group form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-group form label {
+  margin: 10px 0;
+}
+
+.form-group form input {
+  width: 40%;
+  padding: 10px;
+}
+
+.form-group form textarea {
+  width: 50%;
+  height: 200px;
+}
+
+.form-group form button {
+  margin-top: 20px;
+  width: 40%;
+}
+
+.blog-container {
+  margin: auto;
+  width: 50%;
+}
+
+.blog-container .title {
+  text-align: center;
+}
+
+.blog-container p {
+  padding-top: 50px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */

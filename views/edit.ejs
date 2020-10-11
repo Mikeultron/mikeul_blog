@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %> 
+<body>
+  <div class="form-group">
+    <form action="/blogs/update/<%= blog.blog_id %> " method="POST">
+      <label for="blog-title">Blog title:</label>
+        <input required type="text" id="blog-title" name="title" value="<%= blog.blog_title %>">
+        <label for="blog-snippet">Blog snippet:</label>
+        <input required type="text" id="blog-snippet" name="snippet" value="<%= blog.blog_snippet %>">
+        <label for="blog-body">Blog body:</label>
+        <textarea required id="blog-body" name="body">
+          <%= blog.blog_body %>
+        </textarea>
+        <button class="btn success" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

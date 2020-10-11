@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+
+  <%- include('./partials/header.ejs') %> 
+
+  <div class="container">
+    <div class="blogs-wrapper">
+      <% if(blogs.length > 0) { %> 
+        <% blogs.forEach(blog =>{ %> 
+          <div class="blog">
+            <h1><%= blog.blog_title %></h1>
+            <p><%= blog.blog_snippet %></p>
+            <div class="buttons">
+              <a href="/blogs/<%= blog.blog_id %>" class="btn primary">Read</a>
+              <a href="/blogs/edit/<%= blog.blog_id %>" class="btn success">Edit</a>
+              <form action="/blogs/delete/<%= blog.blog_id %>" method="POST">
+                <button type="submit" class="btn danger">Delete</button>
+              </form>
+            </div>
+          </div>
+        <% }); %>
+      <% } else{ %>
+        <p>No blog found...</p>
+      <% } %> 
+    </div>
+  </div>
+
+</body>
+</html>
